@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,13 +9,18 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <ion-img
-  src="https://ionic-docs-demo-v6.vercel.app/assets/madison.jpg">\</ion-img>
-    <p>The Wisconsin State Capitol building in Madison, WI at night</p>
+    <div ng-if="userRole==='dayat'">
+    <ion-img class="poto"
+  src="../../assets/icon/rename.jpg">\</ion-img>
+    </div>
+    <!-- <div ng-if="userRole==='latip'">
+      <ion-img src="../../assets/icon/rename.jpg" style="width: 50%;height: 50%;">\</ion-img>
+    </div> -->
+    <p>Wellcome Home Lil Nigga</p>
   </div>
 </ion-content>
